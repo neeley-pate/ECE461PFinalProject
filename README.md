@@ -7,8 +7,10 @@ This folder contains two scripts: one script with all models running on original
 ## Comparing Airlines Initially
 
 ## Data Cleaning and Reduction
+This folder contains Python Notebooks for combining monthly flight data, data cleaning and reduction(sampling), as well as exploratory data analysis.
 
 ## Dataset
+This folder contains multiple datasets in csv format, including sampled data of Austin airport, KAUS weather data and the combined flight data with weather.
 
 ## PCA
 
