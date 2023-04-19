@@ -7,7 +7,7 @@ This folder contains two scripts: one script with all models running on original
 ## Comparing Airlines Initially
 
 ## Data Cleaning and Reduction
-The Data Cleaning and Reduction folder contains several Python notebooks that are used to perform data cleaning and reduction tasks on datasets of flight records. The notebooks in this folder performs various tasks, such as combining multiple CSV files, eliminating unwanted features, filtering flights that originate from AUS airport, and randomly sampling the data to reduce its size. Besides, the addWeatherToDataset.ipynb conbines hourly weather data with flight data to provide a better dataset for departure delay prediction.
+The dataCleaningAndReduction folder contains several Python notebooks. The notebooks in this folder performs various tasks, such as combining multiple CSV files, eliminating unwanted features, filtering flights that originate from AUS airport, and randomly sampling the data to reduce its size to 10K rows. Besides, the addWeatherToDataset.ipynb conbines hourly weather data with flight data to provide a better dataset for departure delay prediction.
 
 ## Dataset
 This folder contains multiple datasets in csv format, including sampled data of Austin airport, KAUS weather data and the combined flight data with weather.
