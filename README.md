@@ -18,3 +18,4 @@ This folder contains multiple datasets in csv format, including sampled data of 
 This folder contains the poster but in a pdf to be printed as multiple pieces of paper.
 
 ## Regression
+This folder contains the regression models. They are separated by the datasets they are run on: PCA and the original dataset.
