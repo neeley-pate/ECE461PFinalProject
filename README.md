@@ -14,7 +14,6 @@ Explanatory data analysis can be seen [here](https://colab.research.google.com/g
 This folder contains multiple datasets in csv format, including sampled data of Austin airport, KAUS weather data and the combined flight data with weather.
 
 ## PCA
-
 The PCA folder contains all the work that was done for PCA analysis, and some data transformation. The pca.ipynb has all of the code. First, I Loaded in the data. Then there were some features (the weather features) thad has non-numerical values, such as feature "preciptype" which has values like "ice", "rain", "snow", and "freezingrain", as well as feature "conditions" that has values like "Rain", "Snow", "Overcast", etc. For these features, there were some samples who had multiple values as a list. For example, a sample might have ["snow", "rain"] as a value ofr the "preciptype" feature. Thus, the first thing I did was transforming these categorical columns into numerical column by manual one-hot-encoding and then dropping one of the one-hot column.
 
 Then I noticed that there were features that one would not have access to before the delay actually occurs since they are calculated after the flight lands at destination, such as ARR_DELAY (which is the arrival delay at destination), CARRIER_DELAY (delay caused by maintenence, fueling, etc), ELAPSED_TIME, etc. Thus, I removed these features. After this processing, I was left with about 30 features. I saved this dataset to the "dropped_data" folder, file names with "AUS_WITH_WEATHER_2022*.csv".
@@ -26,9 +25,8 @@ Then I performed a pca.fit_transform on the training data and a pca.transform on
 I also did graphed the explained variance for each of the principal components and we were able to capture about 90% of the variance with about 20-25 components.
 
 
-
 ## Poster
 This folder contains the poster but in a pdf to be printed as multiple pieces of paper.
 
 ## Regression
-This folder contains the regression models. They are separated by the datasets they are run on: PCA and the original dataset.
+This folder contains two python notebooks that run the regression models: linear regression, lasso and ridge regressions, and MLPs. They are separated by the datasets they are run on: PCA and the original dataset, both containing numerical data. The notebooks separate the data into input and output (delay) variables using the included training and test splits. As part of the analysis, each notebook maps input correlation to the delay, visualizing the importance of each input variable. The notebooks then contain a grid search platform to test each of a large number of features on the datasets to obtain the best ones for each model.  For each model, the MSE and R-squared values are computed and used to judge its performance. To visual this, scatter plots for the predicted vs actual departure delays are displayed, as well as a plot of the residuals. 
