@@ -21,7 +21,7 @@ Then I noticed that there were features that one would not have access to before
 
 After this, I split the data into train and test data. I saved these datasets to a file so that they can be used later when training models. This file is in folder "pca/split_data", with file name of "AUS_WITH_WEATHER_2022*.csv"
 
-Then I performed a pca.fit_transform on the training data and a pca.transform on the testing data. I saved the transforme data to files so that they can be use later when training models. This file is in folder "pca_data" with file name of "pca/AUS_WITH_WEATHER_2022*.csv"
+Then I performed a pca.fit_transform on the training data and a pca.transform on the testing data. I saved the transforme data to files so that they can be use later when training models. This file is in folder "pca/pca_data" with file name of "AUS_WITH_WEATHER_2022*.csv"
 
 I also did graphed the explained variance for each of the principal components and we were able to capture about 90% of the variance with about 20-25 components.
 
