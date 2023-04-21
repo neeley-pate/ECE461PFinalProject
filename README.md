@@ -23,7 +23,7 @@ After this, I split the data into train and test data. I saved these datasets to
 
 Then I performed a pca.fit_transform on the training data and a pca.transform on the testing data. I saved the transforme data to files so that they can be use later when training models. This file is in folder "pca/pca_data" with file name of "AUS_WITH_WEATHER_2022*.csv"
 
-I also did graphed the explained variance for each of the principal components and we were able to capture about 90% of the variance with about 20-25 components.
+I also graphed the explained variance for each of the principal components and we were able to capture about 90% of the variance with about 20-25 components. This graph is stored in "pca/explained_variance" as "AUC_WITH_WEATHER_2022*.png".
 
 
 ## Poster
